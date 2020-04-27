@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>{{object.id}} - {{object.title}} <a href = "{{object.id}}/update/"><img src="{% static 'logo/edit.png' %}" height="30px" style="margin-bottom:-6px;"></a> <a href = "{{object.id}}/delete/"><img src="{% static 'logo/delete.png' %}" height="30px" style="margin-bottom:-6px;"></a> </h1>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1> {{object.title}} </h1>
+<h1>  {{object.author}} </h1>
+{% if object.published %}
+<h1>  Published </h1>
+{% endif %}
+
+{% endblock %}/

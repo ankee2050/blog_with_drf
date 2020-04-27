@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Articles List</h1>
+<ul>
+	{{hello}} - {{number}}
+{% for i in object_list %}
+<li>
+	
+	<a href="{{ i.get_absolute_url }}"> {{i.title}} </a>
+
+</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Items</h1>
+<h3>{{ obj.title }}</h3>
+<h3>{{ obj.description }}</h3>
+<h3>Do you really want to delete the product "{{obj.title}}"</h3>
+<form action = "." method="POST">{% csrf_token %}
+<p><input type="submit" name="" value="Yes"> <a href="../">Cancel</a></p>
+{% endblock content %}
